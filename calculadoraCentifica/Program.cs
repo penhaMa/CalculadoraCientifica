@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace calculadoraCentifica
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Digite o Login: ");
+            string login = (Console.ReadLine());
+
+            Console.WriteLine("Digite a Senha: ");
+            int senha = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Qual operação deseja fazer: \n");
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
