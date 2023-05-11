@@ -10,11 +10,38 @@ namespace calculadoraCentifica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite o Login: ");
-            string login = (Console.ReadLine());
 
-            Console.WriteLine("Digite a Senha: ");
-            int senha = Convert.ToInt32(Console.ReadLine());
+            string usuarioLogin = "mar";
+            int usuarioSenha = 123;
+
+            string login;
+            int senha;
+            int tentativas = 0;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Digite o Login: ");
+                login = Console.ReadLine();
+
+                Console.WriteLine("Digite a Senha: ");
+                senha = Convert.ToInt32(Console.ReadLine());
+
+                tentativas++;
+
+            } while (login != usuarioLogin && senha != usuarioSenha && tentativas < 3);
+
+            if (login == usuarioLogin && senha == usuarioSenha)
+            {
+                Console.WriteLine("Seja bem vindo ao sistema!!");
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Login ou senha incorretos, digite novamente: ");
+            }
+            
+            Console.ReadKey();
 
             Console.WriteLine("Qual operação deseja fazer: \n");
             Console.WriteLine("1 - Soma");
