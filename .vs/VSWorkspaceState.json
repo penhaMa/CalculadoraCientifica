@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\calculadoraCentifica"
   ],
-  "SelectedNode": "\\calculadoraCentifica.sln",
+  "SelectedNode": "\\calculadoraCentifica\\Calculo.cs",
   "PreviewInSolutionExplorer": false
 }
